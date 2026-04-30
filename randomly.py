@@ -38,39 +38,65 @@ import time
 # if cont==0:
 #     print(f"se acabaron los intentos. el numnero era: {rnum}")
 
-hp1=100
-hp2=100
-perj1=input("nombra al personaje1: ")
-perj2=input("nombra al personaje2: ")
-turno=1
+# hp1=100
+# hp2=100
+# perj1=input("nombra al personaje1: ")
+# perj2=input("nombra al personaje2: ")
+# turno=1
 
-print("que comience la pelea")
-while hp1>0 and hp2>0:
-    print(f"turno {turno}")
-    # el jugador uno
-    daño=random.randint(7, 18)
-    hp2-=daño
-    print(f"el {perj1} hace de {daño} de daño")
-    print(f"el {perj2} tiene {hp2} de vida")
+# print("que comience la pelea")
+# while hp1>0 and hp2>0:
+#     print(f"turno {turno}")
+#     # el jugador uno
+#     daño=random.randint(7, 18)
+#     hp2-=daño
+#     print(f"el {perj1} hace de {daño} de daño")
+#     print(f"el {perj2} tiene {hp2} de vida")
 
-    if hp2<=0:
-        break
-    # el jugador dos
-    daño=random.randint(7, 18)
-    hp1-=daño
-    print(F"el {perj2} hace de {daño} de daño")
-    print(f"el {perj1} tiene {hp1} de vida")
+#     if hp2<=0:
+#         break
+#     # el jugador dos
+#     daño=random.randint(7, 18)
+#     hp1-=daño
+#     print(F"el {perj2} hace de {daño} de daño")
+#     print(f"el {perj1} tiene {hp1} de vida")
 
-    print("-----------------")
-    time.sleep(2)
-    turno+=1
+#     print("-----------------")
+#     time.sleep(2)
+#     turno+=1
 
-print("resultado de final: ")
-print(f"{perj1} tiene de vida: {hp1}")
-print(f"{perj2} tiene de vida: {hp2}")
+# print("resultado de final: ")
+# print(f"{perj1} tiene de vida: {hp1}")
+# print(f"{perj2} tiene de vida: {hp2}")
 
-if hp1 > 0:
-    print(f"{perj1} ha sido el ganador")
-else:
-    print(f"{perj2} ha sido el ganador")
+# if hp1 > 0:
+#     print(f"{perj1} ha sido el ganador")
+# else:
+#     print(f"{perj2} ha sido el ganador")
 
+vip=1.8
+genral=1.4
+tibuna=1.2
+enrada=4000
+op=0
+codigopro=random.randint(7000, 21000)
+print(f"este es su codigo postal {codigopro}")
+print("1.- Vip")
+print("2.- general")
+print("3.- tribunal")
+print("4.-salir")
+op=int(input("donde quiere su lugar?"))
+while op!=4:
+    match op:
+        case 1:
+            print(f"la entreda vip cuesta {enrada*vip}")
+            break
+        case 2:
+            print(f"la entreda general cuesta {enrada*genral}")
+            break
+        case 3:
+            print(f"la entreda tribunal cuesta {enrada*tibuna}")
+            break
+        case _:
+            print("entonces quire cancelar? entiendo, regrese pronto")
+            break
