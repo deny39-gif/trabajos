@@ -1,7 +1,6 @@
 # uso y ejmeplos de ramdom
 
-import random
-import time
+import random, time
 # num=random.randint(1,10)
 # print(num)
 
@@ -74,29 +73,70 @@ import time
 # else:
 #     print(f"{perj2} ha sido el ganador")
 
-vip=1.8
-genral=1.4
-tibuna=1.2
-enrada=4000
-op=0
-codigopro=random.randint(7000, 21000)
-print(f"este es su codigo postal {codigopro}")
-print("1.- Vip")
-print("2.- general")
-print("3.- tribunal")
-print("4.-salir")
-op=int(input("donde quiere su lugar?"))
-while op!=4:
-    match op:
-        case 1:
-            print(f"la entreda vip cuesta {enrada*vip}")
-            break
-        case 2:
-            print(f"la entreda general cuesta {enrada*genral}")
-            break
-        case 3:
-            print(f"la entreda tribunal cuesta {enrada*tibuna}")
-            break
-        case _:
-            print("entonces quire cancelar? entiendo, regrese pronto")
-            break
+# vip=1.8
+# genral=1.4
+# tibuna=1.2
+# enrada=4000
+# op=0
+# codigopro=random.randint(7000, 21000)
+# print(f"este es su codigo postal {codigopro}")
+# print("1.- Vip")
+# print("2.- general")
+# print("3.- tribunal")
+# print("4.-salir")
+# op=int(input("donde quiere su lugar?"))
+# while op!=4:
+#     match op:
+#         case 1:
+#             print(f"la entreda vip cuesta {enrada*vip}")
+#             break
+#         case 2:
+#             print(f"la entreda general cuesta {enrada*genral}")
+#             break
+#         case 3:
+#             print(f"la entreda tribunal cuesta {enrada*tibuna}")
+#             break
+#         case _:
+#             print("entonces quire cancelar? entiendo, regrese pronto")
+#             break
+
+# rnum1=[random.randint(1,9) for _ in range(3)]
+
+# print(f"los numeros ganadores son {rnum1}")
+# intentos=0
+# time.sleep(1)
+# while True:
+#     intentos+=1
+#     intento = [random.randint(1,9) for _ in range(3)]
+
+#     if intento == rnum1:
+#         print(f"intento: {intento}")
+#         print("Jackpot! ganaste")
+#         print(f"numeros de intentos fueron realizados: {intentos}")
+#         break
+
+# n1=random.randint(1,9)
+# n2=random.randint(1,9)
+# n3=random.randint(1,9)
+# t1=False
+# t2=False
+# t3=False
+# intentos=0
+# print(f"los numero ganadores son: [{n1},{n2},{n3}]")
+
+# while not n1 or not n2 or not n3:
+#     print(f"el numero es: {intento}")
+#     intento=random.randint(1,9)
+#     time.sleep(1)
+#     if intento==n1:
+#         t1=True
+#     if intento==n2:
+#         t2=True
+#     if intento==n3:
+#         t3=True
+#     intentos+=1
+# print(f"jackpot! ganaste! numeros de intentos fueron realizados: {intentos}")
+
+'''
+
+'''
