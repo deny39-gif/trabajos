@@ -100,20 +100,20 @@ import random, time
 #             print("entonces quire cancelar? entiendo, regrese pronto")
 #             break
 
-# rnum1=[random.randint(1,9) for _ in range(3)]
+rnum1=[random.randint(1,9) for _ in range(3)]
 
-# print(f"los numeros ganadores son {rnum1}")
-# intentos=0
-# time.sleep(1)
-# while True:
-#     intentos+=1
-#     intento = [random.randint(1,9) for _ in range(3)]
+print(f"los numeros ganadores son {rnum1}")
+intentos=0
+time.sleep(1)
+while True:
+    intentos+=1
+    intento = [random.randint(1,9) for _ in range(3)]
 
-#     if intento == rnum1:
-#         print(f"intento: {intento}")
-#         print("Jackpot! ganaste")
-#         print(f"numeros de intentos fueron realizados: {intentos}")
-#         break
+    if intento == rnum1:
+        print(f"intento: {intento}")
+        print("Jackpot! ganaste")
+        print(f"numeros de intentos fueron realizados: {intentos}")
+        break
 
 # n1=random.randint(1,9)
 # n2=random.randint(1,9)
