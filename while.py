@@ -19,7 +19,7 @@
 #         print("codigo incorrecto")
 
 while True:
-    sex=input("ingrese su sexo (F/M):").lower
+    sex=input("ingrese su sexo (F/M):").lower()
     if sex =="m":
         print("no se puede acceder aqui")
     else:
