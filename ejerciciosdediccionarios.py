@@ -89,8 +89,10 @@ def agre():
     produc[list(produc.keys())[-1]+1]={"producto": pro, "nivel": pre}
 
 def comp():
-    for d in produc:
-        print(f"")
+    mostr()
+    compra=int(input("que producto desea comnprar)"))
+    for compra in produc:
+        print(f"usted a comprado {pro}")
 
 while True:
     try:
@@ -103,4 +105,11 @@ while True:
         print("="*30)
         op=int(input("que quiere hacer: "))
         if op==1:
+            agre()
+        elif op==2:
+            camb()
+        elif op==3:
+            elimi()
+        elif op==4:
             mostr()
+        elif op==5:
