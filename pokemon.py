@@ -55,41 +55,41 @@ def menu():
         op=int(input("que opcion elijes?: "))
         if op==1:
             print("movimientos de charizard:")
-            for clave, movimientos in movichar.items():
-                print("1.-",movichar["movie1"])
-                print("2.-",movichar["movie2"])
-                print("3.-",movichar["movie3"])
-                print("4.-",movichar["movie4"])
-                att=int(input("que desea hacer??: "))
-                if att==1:
-                    print("la defensa de charizard aumentado")
-                elif att==2:
-                    print("charizard ah usado ", movichar["movie2"])
-                    if attack<20:
-                        print("el ataque no es efetivo")
-                        hp2-=attack
-                        turnos+=1
-                    elif attack>20:
-                        print("ataque super efectivo")
-                        hp2-=attack
-                        turnos+=1
-                elif att==3:
-                    print("charizard ah usado ", movichar["movie3"])
-                    if attack<20:
-                        print("el ataque no es efetivo")
-                        hp2-=attack
-                        turnos+=1
-                    elif attack>20:
-                        print("ataque super efectivo")
-                        hp2-=attack
-                        turnos+=1
-                elif att==4:
-                    print("charizard ah usado ", movichar["movie3"])
-                    if attack<20:
-                        print("el ataque no es efetivo")
-                        hp2-=attack
-                        turnos+=1
-                    elif attack>20:
+            
+            print("1.-",movichar["movie1"])
+            print("2.-",movichar["movie2"])
+            print("3.-",movichar["movie3"])
+            print("4.-",movichar["movie4"])
+            att=int(input("que desea hacer??: "))
+            if att==1:
+                print("la defensa de charizard aumentado")
+            elif att==2:
+                print("charizard ah usado ", movichar["movie2"])
+                if attack<20:
+                    print("el ataque no es efetivo")
+                    hp2-=attack
+                    turnos+=1
+                elif attack>20:
+                    print("ataque super efectivo")
+                    hp2-=attack
+                    turnos+=1
+            elif att==3:
+                print("charizard ah usado ", movichar["movie3"])
+                if attack<20:
+                    print("el ataque no es efetivo")
+                    hp2-=attack
+                    turnos+=1
+                elif attack>20:    
+                    print("ataque super efectivo")
+                    hp2-=attack
+                    turnos+=1
+            elif att==4:
+                print("charizard ah usado ", movichar["movie3"])
+                if attack<20:
+                    print("el ataque no es efetivo")
+                    hp2-=attack
+                    turnos+=1
+                elif attack>20:
                         print("ataque super efectivo")
                         hp2-=attack
                         turnos+=1
