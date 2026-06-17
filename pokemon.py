@@ -1,9 +1,12 @@
-import random
+import random, time
 
 attack=random.randint(5,35)
+attlu=random.randint(15,50)
 captu=random.randint(1,4)
 hp1=100
 hp2=500
+
+turnos=1
 
 def captura():
     if captu==1:
@@ -14,7 +17,6 @@ def captura():
         print("el pokemon lugia acaba de romper la ball")
     elif captu==4:
         print("pokemon lugia a sido capturado")
-        break
 
 movilugia={
     "movi1": "Aeroblast",
@@ -24,10 +26,10 @@ movilugia={
 }
 
 movichar={
-    "movi1": "Danza dragon",
-    "movi2": "Puño trueno",
-    "movi3": "Garra dragon",
-    "movi4": "Lanzallamas"
+    "movie1": "Danza dragon",
+    "movie2": "Puño trueno",
+    "movie3": "Garra dragon",
+    "movie4": "Lanzallamas"
 }
 
 mochi={
@@ -44,13 +46,49 @@ def pokedex():
     print("tipo: volador y psiquico")
 
 def menu():
-    print("="*30)
-    print(".-")
-    print(".-")
-    print(".-")
+    while True:
+        print("="*30)
+        print("1.- luchar")
+        print("2.- mochila")
+        print("3.- analisas")
+        print("="*30)
+        op=int(input("que opcion elijes?: "))
+        if op==1:
+            print("movimientos de charizard:")
+            for clave, movimientos in movichar.items():
+                print(movichar["movie1"])
+                print(movichar["movie2"])
+                print(movichar["movie3"])
+                print(movichar["movie4"])
+                att=int(input("que desea hacer??: "))
+                if att==1:
+                    print("la defensa de charizard aumentado")
+                elif att==2:
+                    print("charizard ah usado ", movichar["movie2"])
+                    if attack<20:
+                        print("el ataque no es efetivo")
+                        hp2-=attack
+                        turnos+=1
+                    elif attack>20:
+                        print("ataque super efectivo")
+                        hp2-=attack
+                        turnos+=1
+                elif att==3:
+                    print("charizard ah usado ", movichar["movie3"])
+                    if attack<20:
+                        print("el ataque no es efetivo")
+                        hp2-=attack
+                        turnos+=1
+                    elif attack>20:
+                        print("ataque super efectivo")
+                        hp2-=attack
+                        turnos+=1
 
-print(f"un lugia salvaje con {hp2} acaba de aparecer")
-print("Charizard yo te elijo")
-print(f"Charizard: {hp1} de hp")
 
+def inicio():
+    print(f"un lugia salvaje con {hp2} acaba de aparecer")
+    print("Charizard yo te elijo")
+    print(f"Charizard: {hp1} de hp")
 
+inicio()
+menu()
