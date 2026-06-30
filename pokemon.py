@@ -64,6 +64,21 @@ def pokedex():
     print("Lugia el pokemon legendario de los mares")
     print("tipo: volador y psiquico")
 
+def att2():
+    print("charizard ah usado ", movichar["movie2"])
+    attack=random.randint(5,35)
+    if attack<20:
+        print("el ataque no es efetivo")
+        p2-=attack
+        turnos+=1
+    else:
+        print("ataque super efectivo")
+        hp2-=attack
+        turnos+=1
+        print("lugia tiene ", hp2," de vida")
+        if hp2>0:
+            tunolu()
+
 def menu():
     global hp1,hp2,turnos
     print("="*30)
@@ -82,19 +97,7 @@ def menu():
         if att==1:
             print("la defensa de charizard aumentado")
         elif att==2:
-            print("charizard ah usado ", movichar["movie2"])
-            attack=random.randint(5,35)
-            if attack<20:
-                print("el ataque no es efetivo")
-                hp2-=attack
-                turnos+=1
-            else:
-                print("ataque super efectivo")
-                hp2-=attack
-                turnos+=1
-                print("lugia tiene ", hp2," de vida")
-                if hp2>0:
-                    tunolu()
+            att2()
         elif att==3:
             print("charizard ah usado ", movichar["movie3"])
             attack=random.randint(5,35)
